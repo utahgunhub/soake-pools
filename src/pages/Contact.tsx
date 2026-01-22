@@ -199,7 +199,7 @@ export default function Contact() {
                 {/* Logo */}
                 <div>
                   <img 
-                    src="/full-logo-black.png" 
+                    src="/vanta-logo-black.png" 
                     alt="Vanta Pools" 
                     className="h-16 w-auto"
                   />
@@ -222,29 +222,29 @@ export default function Contact() {
                   <p className="text-lg font-semibold text-text-strong mb-3">Socials:</p>
                   <div className="flex gap-4 items-center">
                     {/* Instagram */}
-                    <a href="https://www.instagram.com/bradfordbuilt/#" target="_blank" rel="noopener noreferrer" className="text-text-strong hover:text-accent-primary transition-colors" aria-label="Instagram">
+                    <Link to="/" className="text-text-strong hover:text-accent-primary transition-colors" aria-label="Instagram">
                       <Instagram size={24} />
-                    </a>
+                    </Link>
                     {/* Facebook */}
-                    <a href="https://www.facebook.com/bradfordcustomhomesandremodeling" target="_blank" rel="noopener noreferrer" className="text-text-strong hover:text-accent-primary transition-colors" aria-label="Facebook">
+                    <Link to="/" className="text-text-strong hover:text-accent-primary transition-colors" aria-label="Facebook">
                       <Facebook size={24} />
-                    </a>
+                    </Link>
                     {/* LinkedIn */}
-                    <a href="https://www.linkedin.com/company/bradford-custom-homes-remodeling/" target="_blank" rel="noopener noreferrer" className="text-text-strong hover:text-accent-primary transition-colors" aria-label="LinkedIn">
+                    <Link to="/" className="text-text-strong hover:text-accent-primary transition-colors" aria-label="LinkedIn">
                       <Linkedin size={24} />
-                    </a>
+                    </Link>
                     {/* TikTok */}
-                    <a href="https://www.tiktok.com/@bradfordbuilt" target="_blank" rel="noopener noreferrer" className="text-text-strong hover:text-accent-primary transition-colors" aria-label="TikTok">
+                    <Link to="/" className="text-text-strong hover:text-accent-primary transition-colors" aria-label="TikTok">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                         <path d="M12.9 2h3.1c.2 1.2.8 2.4 1.7 3.3 1 1 2.2 1.6 3.6 1.8v3.1c-1.5-.1-2.9-.6-4.2-1.3v6.7c0 3.8-3.1 6.9-6.9 6.9S3.3 19.4 3.3 15.6 6.4 8.7 10.2 8.7c.3 0 .6 0 .8.1v3.3c-.3-.1-.6-.1-.8-.1-2 0-3.6 1.6-3.6 3.6s1.6 3.6 3.6 3.6 3.6-1.6 3.6-3.6V2z"/>
                       </svg>
-                    </a>
+                    </Link>
                     {/* YouTube */}
-                    <a href="https://www.youtube.com/channel/UCcFnqmtZ-YXeDJY_qrGXIjQ" target="_blank" rel="noopener noreferrer" className="text-text-strong hover:text-accent-primary transition-colors" aria-label="YouTube">
+                    <Link to="/" className="text-text-strong hover:text-accent-primary transition-colors" aria-label="YouTube">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                         <path d="M23.5 6.2c-.3-1.2-1.2-2.1-2.4-2.4C19 3.3 12 3.3 12 3.3s-7 0-9.1.5C1.7 4.1.8 5 .5 6.2.1 8.3.1 12 .1 12s0 3.7.4 5.8c.3 1.2 1.2 2.1 2.4 2.4 2.1.5 9.1.5 9.1.5s7 0 9.1-.5c1.2-.3 2.1-1.2 2.4-2.4.4-2.1.4-5.8.4-5.8s0-3.7-.4-5.8zM9.7 15.6V8.4l6.1 3.6-6.1 3.6z"/>
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

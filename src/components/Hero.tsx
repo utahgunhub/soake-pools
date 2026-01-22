@@ -70,7 +70,12 @@ export default function Hero({
       <div className="absolute bottom-20 md:bottom-28 lg:bottom-32 left-0 right-0 z-10">
         <div className="w-[80%] mx-auto">
           <h1 className="text-white leading-tight mb-6" style={{ fontFamily: "'PP Editorial Old', serif", fontWeight: 400 }}>
-            {title === "Designed for You, Built for Life" ? (
+            {title === "Luxury Compact Pools, Expertly Crafted" ? (
+              <>
+                <span className="block text-3xl md:text-4xl lg:text-5xl xl:text-6xl">Luxury Compact Pools,</span>
+                <span className="block text-3xl md:text-4xl lg:text-5xl xl:text-6xl italic">Expertly Crafted</span>
+              </>
+            ) : title === "Designed for You, Built for Life" ? (
               <>
                 <span className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Designed for You,</span>
                 <span className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl italic">Built for Life</span>
@@ -90,14 +95,7 @@ export default function Hero({
             </p>
           )}
           {!hideCTA && (
-            <Link to="/contact" onClick={() => {
-              setTimeout(() => {
-                const formElement = document.getElementById('contact-form');
-                if (formElement) {
-                  formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-              }, 100);
-            }}>
+            <Link to="/">
               <button className="bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-white/90 transition-colors">
                 Inquire about Availability
               </button>

@@ -69,24 +69,24 @@ const featuredProjects = [
 
 const whyChooseItems = [
   {
-    title: "Transparent & Frequent Communication",
+    title: "Space-Efficient Design Excellence",
     text:
-      "From preconstruction to project completion, we keep you informed every step of the way. Our proactive communication approach means no surprises, just clear updates, regular check ins, and immediate access to your project team whenever you need answers.",
+      "Our luxury pools are engineered to maximize enjoyment while respecting your space. Each design thoughtfully balances elegant proportions with premium features, proving that exceptional swimming experiences adapt beautifully to any property.",
   },
   {
-    title: "High-Touch Organization with White Glove Philosophy",
+    title: "Premium Quality, Perfect Scale",
     text:
-      "Experience a level of service that goes beyond construction. Our white glove approach means careful attention to every detail, organized workflows that respect your time and property, and a commitment to excellence that shows in every interaction.",
+      "Experience world-class pool construction tailored to your space. Our white glove approach means every inch is crafted with precision, using premium materials and finishes that define luxury, perfectly proportioned to your home.",
   },
   {
-    title: "Price Certainty You Can Trust",
+    title: "Transparent Pricing, No Surprises",
     text:
-      "The numbers we agree upon in preconstruction are the numbers you will pay at completion. No hidden fees, no unexpected costs, no budget creep. We honor our commitments and provide complete financial transparency from start to finish.",
+      "The investment we outline upfront is exactly what you'll pay at completion. No hidden fees, no unexpected costs, no budget creep. We honor our commitments and provide complete financial transparency from consultation to installation.",
   },
   {
-    title: "Timeline Expectations You Can Count On",
+    title: "Efficient Installation Timeline",
     text:
-      "We do not just promise a timeline. We deliver on it. Our proven project management process, experienced team coordination, and realistic scheduling keep your project on track. When we commit to a completion date, we mean it.",
+      "Our streamlined process means faster installation without sacrificing quality. We deliver on promised timelines with proven project management, experienced crews, and realistic scheduling. Your backyard oasis arrives when we say it will.",
   },
 ];
 
@@ -100,7 +100,7 @@ const Index = () => {
   const visibilityRatiosRef = useRef<number[]>(new Array(whyChooseItems.length).fill(0));
   const testimonialRef = useRef<HTMLDivElement>(null);
   
-  const fullText = "More than just a home builder, we are dream weavers";
+  const fullText = "More than just pool builders, we create backyard sanctuaries";
 
   // Custom hook for fade-in animation
   const useFadeIn = () => {
@@ -232,8 +232,8 @@ const Index = () => {
     <Layout>
       {/* Hero Section */}
       <Hero 
-        title="Designed for You, Built for Life"
-        subtitle="New home plans and thoughtful remodels built with care and precision."
+        title="Luxury Compact Pools, Expertly Crafted"
+        subtitle="Elegant swimming pools designed to fit your space and elevate your lifestyle."
         backgroundVideoSrc="/foxcroft-hero.mp4"
         darkerOverlay={true}
       />
@@ -249,27 +249,20 @@ const Index = () => {
           >
             <div>
               <h2 className="text-5xl md:text-4xl lg:text-5xl font-bold text-text-strong mb-8 leading-tight" style={{ fontFamily: "'PP Editorial Old', serif", fontWeight: 400 }}>
-                Custom Home<br />
-                <span className="italic">Builders</span>
+                Luxury<br />
+                <span className="italic">Pools</span>
               </h2>
             </div>
             <div>
                     <p className="text-base text-text mb-8 leading-relaxed">
-                      Vanta Pools is the choice for discerning homeowners who demand transparency. Our homes don't just elevate wellbeing and craftsmanship; they inspire awe, endure as timeless masterpieces, and embody the unique legacy of those privileged enough to live within them.
+                      Vanta Pools is the choice for discerning homeowners who demand luxury in perfectly scaled spaces. Our pools don't just fit seamlessly into your property; they inspire relaxation, endure as timeless features, and embody the unique lifestyle of those who appreciate thoughtful design and quality craftsmanship.
                     </p>
               <div className="flex flex-col sm:flex-row gap-8">
-                <Link to="/contact" onClick={() => {
-                  setTimeout(() => {
-                    const formElement = document.getElementById('contact-form');
-                    if (formElement) {
-                      formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                  }, 100);
-                }} className="flex items-center gap-3 text-text-strong hover:opacity-80 transition-opacity cursor-pointer">
+                <Link to="/" className="flex items-center gap-3 text-text-strong hover:opacity-80 transition-opacity cursor-pointer">
                   <div className="w-4 h-4 bg-text-strong"></div>
                   <span className="text-sm font-medium uppercase tracking-wide">Get In Touch</span>
                 </Link>
-                <Link to="/gallery" className="flex items-center gap-3 text-text-strong hover:opacity-80 transition-opacity cursor-pointer">
+                <Link to="/" className="flex items-center gap-3 text-text-strong hover:opacity-80 transition-opacity cursor-pointer">
                   <div className="w-4 h-4 border-2 border-text-strong bg-bg-alt"></div>
                   <span className="text-sm font-medium uppercase tracking-wide">Discover Portfolio</span>
                 </Link>
@@ -294,17 +287,17 @@ const Index = () => {
           }}
         >
           {[
-            '/homepage-paralax-images/LaRuche_MacBuilt_17 Gilmer Way_Obie Entry-08.jpg',
-            '/homepage-paralax-images/58-Foxcroft Rd NW-58.jpg',
-            '/homepage-paralax-images/LaRuchePhoto-MacBuilt-147CarlSandersDr-Daytime-6.jpg',
-            '/homepage-paralax-images/31-Foxcroft Rd NW-31.jpg',
-            '/homepage-paralax-images/LaRuche_MacBuilt_17 Gilmer Way_Obie Entry-05.jpg',
-            '/homepage-paralax-images/18-Foxcroft Rd NW-18.jpg'
+            '/pool-pics/pool-pics-1.png',
+            '/pool-pics/pool-pics-2.png',
+            '/pool-pics/pool-pics-3.png',
+            '/pool-pics/pool-pics-4.png',
+            '/pool-pics/pool-pics-5.png',
+            '/pool-pics/pool-pics-6.png'
           ].map((src, idx) => (
             <div key={idx} className="flex-shrink-0 w-96 h-72 overflow-hidden">
               <img 
                 src={src}
-                alt={`Gallery ${idx + 1}`}
+                alt={`Pool ${idx + 1}`}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -320,16 +313,16 @@ const Index = () => {
           }}
         >
           {[
-            '/homepage-paralax-images/LaRuchePhoto-MacBuilt-147CarlSandersDr-Daytime-2.jpg',
-            '/homepage-paralax-images/04-Foxcroft Rd NW-4.jpg',
-            '/homepage-paralax-images/LaRuchePhoto-MacBuilt-147CarlSandersDr-Daytime-12.jpg',
-            '/homepage-paralax-images/08-Foxcroft Rd NW-8.jpg',
-            '/homepage-paralax-images/LaRuche_MacBuilt_17 Gilmer Way_Obie Entry-00.jpg'
+            '/pool-pics/pool-pics-7.png',
+            '/pool-pics/pool-pics-8.png',
+            '/pool-pics/pool-pics-9.png',
+            '/pool-pics/pool-pics-10.png',
+            '/pool-pics/pool-pics-11.png'
           ].map((src, idx) => (
             <div key={`row2-${idx}`} className="flex-shrink-0 w-96 h-72 overflow-hidden">
               <img 
                 src={src}
-                alt={`Gallery ${idx + 8}`}
+                alt={`Pool ${idx + 7}`}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -347,10 +340,10 @@ const Index = () => {
             }`}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-text-strong mb-4" style={{ fontFamily: "'PP Editorial Old', serif", fontWeight: 400 }}>
-              Our Promise to You
+              Why Choose Vanta Pools
             </h2>
             <p className="text-xl text-text max-w-2xl mx-auto">
-              Four core commitments that set Vanta Pools apart: transparency, service excellence, budget certainty, and reliable timelines.
+              Four reasons luxury pools are perfect for modern living: space-efficient design, premium quality, transparent pricing, and efficient installation.
             </p>
           </div>
         </div>
@@ -361,10 +354,10 @@ const Index = () => {
         {/* Full-width background images */}
         <div className="absolute inset-0">
           {[
-            '/3rd-section.png', // Transparent & Frequent Communication
-            '/2nd-section.png', // Price Certainty You Can Trust
-            '/home-gallery/home-gallery-1.png', // High-Touch Organization
-            '/4th-home-page.jpg'  // Timeline Expectations
+            '/pool-pics/pool-pics-12.png', // Transparent & Frequent Communication
+            '/pool-pics/pool-pics-13.png', // Price Certainty You Can Trust
+            '/pool-pics/pool-pics-14.png', // High-Touch Organization
+            '/pool-pics/pool-pics-15.png'  // Timeline Expectations
           ].map((src, idx) => (
             <div
               key={idx}
@@ -442,60 +435,54 @@ const Index = () => {
             {/* Text content - 1/4 of row */}
             <div className="space-y-6 lg:col-span-2">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-strong" style={{ fontFamily: "'PP Editorial Old', serif", fontWeight: 400 }}>
-                What We <span className="italic">Build</span>
+                What We <span className="italic">Create</span>
               </h2>
               <div>
                 <p className="text-base text-text leading-relaxed">
-                  We design and build custom homes tailored to your lot, lifestyle, and vision. Our team also delivers refined renovations that improve flow, function, and everyday comfort.
+                  We design and install luxury pools tailored to your space, lifestyle, and vision. Our team delivers exceptional aquatic experiences with premium features, elegant aesthetics, and thoughtful design that maximizes every square foot.
                 </p>
               </div>
               
               <div className="flex items-center gap-3 mt-6">
-                <Link to="/new-construction" className="flex items-center gap-3 text-text-strong hover:opacity-80 transition-opacity cursor-pointer">
+                <Link to="/" className="flex items-center gap-3 text-text-strong hover:opacity-80 transition-opacity cursor-pointer">
                   <div className="w-4 h-4 bg-text-strong"></div>
-                  <span className="text-sm font-medium uppercase tracking-wide">VIEW NEW BUILDS</span>
+                  <span className="text-sm font-medium uppercase tracking-wide">VIEW POOL DESIGNS</span>
                 </Link>
               </div>
             </div>
 
             {/* Featured New Builds - two horizontal cards stacked */}
             <div className="lg:col-span-3 space-y-10">
-              {/* Project 1: Fox Croft */}
+              {/* Project 1: Featured Pool */}
               <div>
                 <div className="w-full h-56 md:h-64 overflow-hidden bg-bg-muted">
                   <img 
-                    src="/fox-croft-photos/01-Foxcroft Rd NW-1.jpg"
-                    alt="Fox Croft"
+                    src="/pool-pics/pool-pics-16.png"
+                    alt="Featured Pool Design"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="mt-4">
-                  <Link 
-                    to="/projects/fox-croft"
-                    className="flex items-center gap-3 text-text-strong hover:opacity-80 transition-opacity"
-                  >
+                  <Link to="/" className="flex items-center gap-3 text-text-strong hover:opacity-80 transition-opacity">
                     <div className="w-4 h-4 border-2 border-text-strong bg-transparent"></div>
-                    <span className="text-sm font-medium uppercase tracking-wide">Fox Croft</span>
+                    <span className="text-sm font-medium uppercase tracking-wide">Featured Pool Design</span>
                   </Link>
                 </div>
               </div>
 
-              {/* Project 2: Stone Creek Interior */}
+              {/* Project 2: Luxury Pool */}
               <div>
                 <div className="w-full h-56 md:h-64 overflow-hidden bg-bg-muted">
                   <img 
-                    src="/project-stone-creek/205 Stone Creek Ct High Res_01.jpg"
-                    alt="Stone Creek Interior"
+                    src="/pool-pics/pool-pics-17.png"
+                    alt="Luxury Pool Installation"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="mt-4">
-                  <Link 
-                    to="/projects/stone-creek"
-                    className="flex items-center gap-3 text-text-strong hover:opacity-80 transition-opacity"
-                  >
+                  <Link to="/" className="flex items-center gap-3 text-text-strong hover:opacity-80 transition-opacity">
                     <div className="w-4 h-4 border-2 border-text-strong bg-transparent"></div>
-                    <span className="text-sm font-medium uppercase tracking-wide">Stone Creek Interior</span>
+                    <span className="text-sm font-medium uppercase tracking-wide">Luxury Pool Installation</span>
                   </Link>
                 </div>
               </div>
@@ -510,7 +497,7 @@ const Index = () => {
         <div 
           className="absolute inset-0"
           style={{
-            backgroundImage: `url('/new-builds5.png')`,
+            backgroundImage: `url('/pool-pics/pool-pics-18.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -546,10 +533,10 @@ const Index = () => {
               Our Gallery
             </h2>
             <p className="text-sm text-text mb-6">
-              Explore our gallery to see inspired new builds and elevated remodels from across our portfolio. 
-              Discover thoughtful details, beautiful materials, and moments that make a house feel like home.
+              Explore our gallery to see stunning pool installations from across our portfolio. 
+              Discover thoughtful designs, premium finishes, and transformative spaces that showcase how luxury adapts beautifully to any setting.
             </p>
-            <Link to="/gallery" className="flex items-center gap-3 text-text-strong hover:opacity-80 transition-opacity">
+            <Link to="/" className="flex items-center gap-3 text-text-strong hover:opacity-80 transition-opacity">
               <div className="w-4 h-4 bg-text-strong"></div>
               <span className="text-sm font-medium uppercase tracking-wide">VIEW ALL IMAGES</span>
             </Link>
@@ -566,26 +553,31 @@ const Index = () => {
           <Carousel opts={{ loop: true, align: 'start' }} className="w-full">
             <CarouselContent>
               {[
-                '/new-builds6.jpg',
-                '/home-gallery/home-gallery-3.png',
-                '/new-builds7.jpg',
-                '/home-gallery/home-gallery-4.png',
-                '/home-gallery/home-gallery-5.png',
-                '/home-gallery/home-gallery-6.png',
-                '/home-gallery/home-gallery-7.png',
-                '/home-gallery/home-gallery-8.png',
-                '/home-gallery/home-gallery-9.png',
-                '/home-gallery/home-gallery-10.png',
-                '/home-gallery/home-gallery-11.png',
-                '/home-gallery/home-gallery-12.png',
-                '/home-gallery/home-gallery-13.png',
-                '/home-gallery/home-gallery-14.png'
+                '/pool-pics/pool-pics-1.png',
+                '/pool-pics/pool-pics-2.png',
+                '/pool-pics/pool-pics-3.png',
+                '/pool-pics/pool-pics-4.png',
+                '/pool-pics/pool-pics-5.png',
+                '/pool-pics/pool-pics-6.png',
+                '/pool-pics/pool-pics-7.png',
+                '/pool-pics/pool-pics-8.png',
+                '/pool-pics/pool-pics-9.png',
+                '/pool-pics/pool-pics-10.png',
+                '/pool-pics/pool-pics-11.png',
+                '/pool-pics/pool-pics-12.png',
+                '/pool-pics/pool-pics-13.png',
+                '/pool-pics/pool-pics-14.png',
+                '/pool-pics/pool-pics-15.png',
+                '/pool-pics/pool-pics-16.png',
+                '/pool-pics/pool-pics-17.png',
+                '/pool-pics/pool-pics-18.png',
+                '/pool-pics/pool-pics-19.png'
               ].map((src, idx) => (
                 <CarouselItem key={idx} className="basis-[85%] md:basis-[75%] lg:basis-[70%]">
                   <div className="w-full h-[26rem] md:h-[32rem] lg:h-[36rem] overflow-hidden">
                     <img
                       src={src}
-                      alt={`Gallery ${idx + 1}`}
+                      alt={`Pool ${idx + 1}`}
                       className="w-full h-full object-cover"
                     />
                   </div>
