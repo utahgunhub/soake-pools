@@ -372,22 +372,6 @@ const Index = () => {
               />
               {/* Dark overlay for text readability */}
               <div className="absolute inset-0 bg-text-strong/40"></div>
-              {/* Gold stamp for first 2 sections */}
-              {idx < 2 && (
-                <img
-                  src="/gold-stamp.png"
-                  alt="Gold Award Winner"
-                  className="absolute bottom-8 right-8 w-20 md:w-24 lg:w-28 z-10"
-                />
-              )}
-              {/* Silver stamp for 3rd section */}
-              {idx === 2 && (
-                <img
-                  src="/silver-stamp.png"
-                  alt="Silver Award Winner"
-                  className="absolute bottom-8 right-8 w-20 md:w-24 lg:w-28 z-10"
-                />
-              )}
             </div>
           ))}
         </div>
