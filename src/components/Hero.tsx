@@ -12,7 +12,7 @@ interface HeroProps {
 }
 
 export default function Hero({
-  title = "Crafted Remodels. Enduring Value.",
+  title = "Luxury Spas. Enduring Value.",
   subtitle = "Transform your home with expert kitchen, bathroom, and whole-home remodeling services.",
   backgroundImage = heroImage,
   backgroundVideoSrc,
